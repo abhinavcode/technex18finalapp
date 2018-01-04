@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.iitbhu.technex18.activities.CorporateConclave"
+    tools:showIn="@layout/activity_exhibitions">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="@dimen/cardMarginVertical"-->
+            <!--android:layout_marginLeft="@dimen/cardMarginHorizontal"-->
+            <!--android:layout_marginRight="@dimen/cardMarginHorizontal"-->
+            <!--android:background="@android:color/white"-->
+            <!--app:cardElevation="4dp">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:src="@drawable/bannerascension"-->
+                <!--android:layout_height="wrap_content" />-->
+
+        <!--</android.support.v7.widget.CardView>-->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_marginBottom="@dimen/cardMarginVertical"
+            android:layout_marginLeft="@dimen/cardMarginHorizontal"
+            android:layout_marginRight="@dimen/cardMarginHorizontal"
+            android:background="@android:color/white"
+            app:cardElevation="4dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <com.iitbhu.technex18.utils.BoldModTextView
+                    android:layout_width="match_parent"
+                    android:background="@drawable/strokered"
+                    android:gravity="center_horizontal"
+                    android:textSize="20sp"
+                    android:padding="2dp"
+
+                    android:layout_margin="@dimen/cardMarginVertical"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="Introduction"/>
+
+                <com.iitbhu.technex18.utils.ModTextView
+                    android:layout_width="match_parent"
+                    android:gravity="left"
+                    android:textSize="14sp"
+                    android:padding="8dp"
+                    android:autoLink="web|phone|email"
+                    android:textColorLink="@color/md_blue_700"
+
+                    android:id="@+id/tv_exhibitions_intro"
+                    android:layout_margin="@dimen/cardMarginVertical"
+                    android:textColor="@color/md_grey_900"
+                    android:layout_height="wrap_content"
+                    android:text="Numerous exhibitions are held at Technex to showcase some of the most interesting things, students are capable of creating, which will dominate in the field of technology in the future world."/>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_marginBottom="@dimen/cardMarginVertical"
+            android:layout_marginLeft="@dimen/cardMarginHorizontal"
+            android:layout_marginRight="@dimen/cardMarginHorizontal"
+            android:background="@android:color/white"
+            app:cardElevation="4dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <com.iitbhu.technex18.utils.BoldModTextView
+                    android:layout_width="match_parent"
+                    android:background="@drawable/strokegreen"
+                    android:gravity="center_horizontal"
+                    android:textSize="20sp"
+
+                    android:padding="2dp"
+                    android:layout_margin="@dimen/cardMarginVertical"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="Contents"/>
+
+                <com.iitbhu.technex18.utils.ModTextView
+                    android:layout_width="match_parent"
+                    android:gravity="left"
+                    android:textSize="14sp"
+                    android:padding="8dp"
+                    android:autoLink="web|phone|email"
+                    android:textColorLink="@color/md_blue_700"
+
+                    android:id="@+id/tv_exhibitions_content"
+                    android:layout_margin="@dimen/cardMarginVertical"
+                    android:textColor="@color/md_grey_900"
+                    android:layout_height="wrap_content"
+                    android:text="ORNITHOPTER
+An aircraft that flies flapping its wings imitating the size and wing-flapping of birds, bats and insects.
+
+ROBO-HAND
+An Arduino based project that can move its fingers and pick objects using concept of conductive material with the electronics.
+
+VR SIMULATOR
+VR simulator is ready to bring an extravaganza of roller coaster ride and take the entertainment to another level.
+
+BOWLING ROBOT
+
+Bowling Bot is an autonomous robot made using Lego and Tetrix programable kit. It has the ability to sense the path and obstacles and move to the location to pick up the bowling ball then aim using sensors and then hit the pins.
+
+GREEN BUILDING MATERIALS
+Presenting Green building materials aiming towards sustainability. They are eco-friendly providing ambient climatic conditions, thus providing extreme comfort.
+
+GOLF SIMULATOR
+
+virtual golf simulator has all the latest features and technology which will make your golfing experience real and enjoyable.
+
+HUMANOID BOT: INDRO
+
+INDRO was not built in a laboratory or a high-end workshop, but instead it was built inside a house with minimal basic tools like aluminium, wood, cardboard, plastic etc.
+
+BRAIN-CONTROLLED DRONE
+
+The Puzzlebox Orbit is a brain-controlled helicopter.
+
+3D-PRINTER
+Will synthesize a three-dimensional objects in which successive layers of material are formed under computer control to create an object.
+
+CUBE-SOLVER BOT
+
+Construction of a cube solving robot is a fascinating combination of image processing that uses
+Graphical User Interface, analysis methods and the controller and motor to launch the computed movement to resolve the puzzle.
+
+BIO-BOT
+
+Bio-bot is a motorized bot which use different sensors like IR, ultrasonic, distance sensors and powerful actuators.
+
+INDUSTRIAL ROBOT
+This robot is a prototype of industrial robots constructed using a basic concept of switch and algorithm based programming.
+
+NAO
+
+Introducing to you all “The humanoid robot NAO” which can walk, talk, move around and performs
+user defined tasks."/>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

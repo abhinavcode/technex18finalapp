@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.iitbhu.technex18.activities.CorporateConclave"
+    tools:showIn="@layout/activity_pronites">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="@dimen/cardMarginVertical"-->
+            <!--android:layout_marginLeft="@dimen/cardMarginHorizontal"-->
+            <!--android:layout_marginRight="@dimen/cardMarginHorizontal"-->
+            <!--android:background="@android:color/white"-->
+            <!--app:cardElevation="4dp">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:src="@drawable/bannerascension"-->
+                <!--android:layout_height="wrap_content" />-->
+
+        <!--</android.support.v7.widget.CardView>-->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_marginBottom="@dimen/cardMarginVertical"
+            android:layout_marginLeft="@dimen/cardMarginHorizontal"
+            android:layout_marginRight="@dimen/cardMarginHorizontal"
+            android:background="@android:color/white"
+            app:cardElevation="4dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <com.iitbhu.technex18.utils.BoldModTextView
+                    android:layout_width="match_parent"
+                    android:background="@drawable/strokered"
+                    android:gravity="center_horizontal"
+                    android:textSize="20sp"
+                    android:padding="2dp"
+
+                    android:layout_margin="@dimen/cardMarginVertical"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="Introduction"/>
+
+                <com.iitbhu.technex18.utils.ModTextView
+                    android:layout_width="match_parent"
+                    android:gravity="left"
+                    android:textSize="14sp"
+                    android:padding="8dp"
+                    android:autoLink="web|phone|email"
+                    android:textColorLink="@color/md_blue_700"
+
+                    android:id="@+id/tv_pronites_intro"
+                    android:layout_margin="@dimen/cardMarginVertical"
+                    android:textColor="@color/md_grey_900"
+                    android:layout_height="wrap_content"
+                    android:text="Technex brings to you the most awaited nights- ‘Kaleidoscope’, so feel the adrenaline rush and get ready to burst with laughter."/>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_marginBottom="@dimen/cardMarginVertical"
+            android:layout_marginLeft="@dimen/cardMarginHorizontal"
+            android:layout_marginRight="@dimen/cardMarginHorizontal"
+            android:background="@android:color/white"
+            app:cardElevation="4dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <com.iitbhu.technex18.utils.BoldModTextView
+                    android:layout_width="match_parent"
+                    android:background="@drawable/strokegreen"
+                    android:gravity="center_horizontal"
+                    android:textSize="20sp"
+
+                    android:padding="2dp"
+                    android:layout_margin="@dimen/cardMarginVertical"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="Contents"/>
+
+                <com.iitbhu.technex18.utils.ModTextView
+                    android:layout_width="match_parent"
+                    android:gravity="left"
+                    android:textSize="14sp"
+                    android:padding="8dp"
+                    android:autoLink="web|phone|email"
+                    android:textColorLink="@color/md_blue_700"
+
+                    android:layout_margin="@dimen/cardMarginVertical"
+                    android:id="@+id/tv_pronites_content"
+                    android:textColor="@color/md_grey_900"
+                    android:layout_height="wrap_content"
+                    android:text="Sorabh Pant- one of the most successful comedians- has done over 250 shows in over 17 cities and has been rated amongst India’s top 10 stand-up comedians by Times of India. He is also famous for comedy specials like ‘Pant on fire’, ‘Travelling Pants’, and many others.
+
+Vipul Goyal, Abhishek Banerjee(Bhushi) and Rasika Dugal(Kayva)- the famous cast of TVF’s ‘Humorously Yours’ will also light up the stage at Technex’17.
+
+Live, feel and rejoice this Technex!!!"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

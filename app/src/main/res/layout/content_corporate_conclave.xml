@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.iitbhu.technex18.activities.CorporateConclave"
+    tools:showIn="@layout/activity_corporate_conclave">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="@dimen/cardMarginVertical"-->
+            <!--android:layout_marginLeft="@dimen/cardMarginHorizontal"-->
+            <!--android:layout_marginRight="@dimen/cardMarginHorizontal"-->
+            <!--android:background="@android:color/white"-->
+            <!--app:cardElevation="4dp">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:src="@drawable/bannerascension"-->
+                <!--android:layout_height="wrap_content" />-->
+
+        <!--</android.support.v7.widget.CardView>-->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_marginBottom="@dimen/cardMarginVertical"
+            android:layout_marginLeft="@dimen/cardMarginHorizontal"
+            android:layout_marginRight="@dimen/cardMarginHorizontal"
+            android:background="@android:color/white"
+            app:cardElevation="4dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <com.iitbhu.technex18.utils.BoldModTextView
+                    android:layout_width="match_parent"
+                    android:background="@drawable/strokered"
+                    android:gravity="center_horizontal"
+                    android:textSize="20sp"
+                    android:padding="2dp"
+
+                    android:layout_margin="@dimen/cardMarginVertical"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="Introduction"/>
+
+                <com.iitbhu.technex18.utils.ModTextView
+                    android:layout_width="match_parent"
+                    android:gravity="left"
+                    android:textSize="14sp"
+                    android:padding="8dp"
+                    android:autoLink="web|phone|email"
+                    android:textColorLink="@color/md_blue_700"
+
+                    android:id="@+id/tv_corporate_intro"
+                    android:layout_margin="@dimen/cardMarginVertical"
+                    android:textColor="@color/md_grey_900"
+                    android:layout_height="wrap_content"
+                    android:text="Technex ’17 presents before you Corporate Conclave, which brings together the biggest corporate stalwarts of present times."/>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_marginBottom="@dimen/cardMarginVertical"
+            android:layout_marginLeft="@dimen/cardMarginHorizontal"
+            android:layout_marginRight="@dimen/cardMarginHorizontal"
+            android:background="@android:color/white"
+            app:cardElevation="4dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <com.iitbhu.technex18.utils.BoldModTextView
+                    android:layout_width="match_parent"
+                    android:background="@drawable/strokegreen"
+                    android:gravity="center_horizontal"
+                    android:textSize="20sp"
+
+                    android:padding="2dp"
+                    android:layout_margin="@dimen/cardMarginVertical"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="Contents"/>
+
+                <com.iitbhu.technex18.utils.ModTextView
+                    android:layout_width="match_parent"
+                    android:gravity="left"
+                    android:textSize="14sp"
+                    android:padding="8dp"
+                    android:autoLink="web|phone|email"
+                    android:textColorLink="@color/md_blue_700"
+
+                    android:id="@+id/tv_corporate_content"
+                    android:layout_margin="@dimen/cardMarginVertical"
+                    android:textColor="@color/md_grey_900"
+                    android:layout_height="wrap_content"
+                    android:text="The conclave aims to establish a platform through which the students will interact with the executives, to prepare themselves for the corporate battle ahead. The conclave will consist of interactive workshops and discussions between company executives and students, to help foster a better knowledge and awareness of the know-how of the industry.
+
+The corporate giants include Larsen and Toubro, Samsung, Citrix and Citi."/>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

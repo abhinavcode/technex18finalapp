@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_height="240dp"
+    android:id="@+id/cv_workshops"
+    android:layout_margin="4dp"
+    android:layout_width="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/talk_bg"
+        android:src="@drawable/matbag1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="120dp"
+        android:background="@color/transparent_black_percent_40"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <com.iitbhu.technex18.utils.RoundedImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal|bottom"
+            android:id="@+id/talk_icon"
+            android:src="@drawable/owl"/>
+
+        <com.iitbhu.technex18.utils.BoldModTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:id="@+id/talk_name"
+            android:textColor="@color/white"
+            android:text="Rosaly Lopez"
+            />
+
+        <com.iitbhu.technex18.utils.ModTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginBottom="6dp"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:id="@+id/talk_subs"
+            android:textColor="@color/white"
+            android:text="Sr. Administrator, NASA"/>
+
+        <com.iitbhu.technex18.utils.ModTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:layout_marginBottom="2dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:id="@+id/talk_desc"
+            android:padding="5dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:text="Dashing through the snow, in a one horse open sleigh, over the fields we go, laughing all the way!! Jingle Bells, Jingle Bells!!"
+            />
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

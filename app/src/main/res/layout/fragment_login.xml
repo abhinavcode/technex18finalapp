@@ -1,0 +1,195 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:background="@drawable/bgblurbluea"
+    tools:context="com.iitbhu.technex18.activities.LoginActivity$PlaceholderFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.iitbhu.technex18.utils.BoldModTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:text="Welcome to"
+                android:textColor="@color/white"/>
+
+            <com.iitbhu.technex18.utils.BoldModTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:text="Technex 18"
+                android:textColor="@color/white"/>
+
+
+            <LinearLayout
+                android:id="@+id/layout_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="visible"
+                android:layout_gravity="bottom"
+                android:orientation="vertical" >
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/transparent_white_percent_10">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="35dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:scaleType="fitCenter"
+                            android:padding="5dp"
+                            android:src="@drawable/account_outline"
+                            android:background="@color/transparent_black_percent_25"
+                            />
+
+
+                        <EditText
+                            android:id="@+id/et_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Email"
+                            android:inputType="textEmailAddress"
+                            android:textSize="16dp"
+                            android:paddingLeft="15dp"
+                            android:textColorHint="@color/md_blue_800"
+                            android:textColor="@color/md_blue_800"
+                            android:background="@color/transparent_white_percent_25"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:scaleType="fitCenter"
+                            android:padding="5dp"
+                            android:src="@drawable/lock_out"
+                            android:background="@color/transparent_black_percent_25"
+                            />
+
+
+                        <EditText
+                            android:id="@+id/et_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Password"
+                            android:textSize="16dp"
+                            android:inputType="textPassword"
+                            android:paddingLeft="15dp"
+                            android:singleLine="true"
+                            android:textColorHint="@color/md_blue_800"
+                            android:textColor="@color/md_blue_800"
+                            android:background="@color/transparent_white_percent_25"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="21dp"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="14dp"
+                        android:layout_margin="15dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/transparent_full"
+                        android:stateListAnimator="@null"
+                        android:elevation="0dp"
+                        android:textAllCaps="false"
+                        android:id="@+id/btn_forgot_password"
+                        android:gravity="top|center_horizontal"
+                        android:textColor="@color/transparent_white_percent_75"
+                        android:text="Forgot Password? Click Here"/>
+
+                    <Button
+                        android:id="@+id/btn_login"
+                        android:layout_height="40dp"
+                        android:layout_width="match_parent"
+                        android:background="@color/md_blue_800"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="LOG IN"
+                        android:textSize="14dp"
+                        android:textColorHighlight="@color/grey"
+                        android:textColor="@color/transparent_white_percent_55"/>
+
+
+
+                    />
+
+                </LinearLayout>
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="right" />
+
+                <com.iitbhu.technex18.utils.ModTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Not yet Registered?"
+                    android:textSize="14dp"
+                    android:textColor="@color/white"/>
+
+
+
+                <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="REGISTER NOW"
+                    android:textColorHighlight="@color/grey"
+                    android:textSize="14dp"
+                    android:textColor="@color/transparent_white_percent_55"
+                    android:background="@color/md_pink_800"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

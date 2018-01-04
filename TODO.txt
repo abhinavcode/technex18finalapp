@@ -1,0 +1,4 @@
+TODO
+1. Understand EventOptions array in JSON Response from Event API
+2. Understand and implement WorkshopOptions array in JSON Response from Workshop API
+3. May remove optionsOrder from eventOptions array in JSON Response from Event API

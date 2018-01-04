@@ -1,0 +1,888 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.iitbhu.technex18.activities.LoginActivity$PlaceholderFragment">
+
+    <!--
+    LIST OF CARDS (CV WISE)
+        1. Events
+        2. Think Talks
+        3. Workshops
+        4. Startup Fair
+        5. Hospitality
+        6. Technex Go!
+        7. Gallery
+        8. Video Wall
+        9. Pronites
+        10. Exhibitions
+        11. Corporate Conclave
+        12. Institute Day
+    -->
+
+    <!--COLOR SCHEME
+        RED         GREEN
+        BLUE        ORANGE
+        PURPLE      TEAL
+        LIGHTBLUE   PINK
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <!--Events-->
+        <!--CV 1-->
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:layout_height="160dp"
+            custom:cardBackgroundColor="#00000000"
+
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:layout_width="0dp">
+
+            <FrameLayout
+                android:layout_height="match_parent"
+                android:id="@+id/cv1"
+                android:layout_width="match_parent"
+                android:background="@color/md_red_trans">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="50dp">
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="50dp" />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:padding="5dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/robo_white"
+                        android:scaleType="fitCenter"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="bottom|start"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+
+                    <com.iitbhu.technex18.utils.BoldModTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:textSize="16dp"
+                        android:textColor="@color/white"
+                        android:text="Events"/>
+
+                    <com.iitbhu.technex18.utils.ModTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:layout_gravity="bottom|end"
+                        android:textColor="@color/white"
+                        android:text="Ready. Steady. Aim for Glory"/>
+
+
+                </LinearLayout>
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--Think Talks-->
+        <!--CV 2-->
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:layout_height="160dp"
+            custom:cardBackgroundColor="#00000000"
+            android:id="@+id/cv2"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:layout_width="0dp">
+
+            <FrameLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@color/md_green_trans">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="50dp">
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="50dp" />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:padding="5dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/lecture_white"
+                        android:scaleType="fitCenter"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="bottom|start"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+
+                    <com.iitbhu.technex18.utils.BoldModTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:textSize="16dp"
+                        android:textColor="@color/white"
+                        android:text="Think Talks"/>
+
+                    <com.iitbhu.technex18.utils.ModTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:layout_gravity="bottom|end"
+                        android:textColor="@color/white"
+                        android:text="Soak in the Wisdom."/>
+
+
+                </LinearLayout>
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <!--Workshops-->
+        <!--CV 3-->
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:layout_height="160dp"
+            custom:cardBackgroundColor="#00000000"
+            android:id="@+id/cv3"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:layout_width="0dp">
+
+            <FrameLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@color/md_indigo_trans">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="50dp">
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="50dp" />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:padding="5dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_workshop"
+                        android:scaleType="fitCenter"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="bottom|start"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+
+                    <com.iitbhu.technex18.utils.BoldModTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:textSize="16dp"
+                        android:textColor="@color/white"
+                        android:text="Workshops"/>
+
+                    <com.iitbhu.technex18.utils.ModTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:layout_gravity="bottom|end"
+                        android:textColor="@color/white"
+                        android:text="Learn by Fun"/>
+
+
+                </LinearLayout>
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--StartUp Fair-->
+        <!--CV 4-->
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:layout_height="160dp"
+            custom:cardBackgroundColor="#00000000"
+            android:id="@+id/cv4"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:layout_width="0dp">
+
+            <FrameLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@color/md_orange_trans">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="50dp">
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="50dp" />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:padding="5dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/bulb_white"
+                        android:scaleType="fitCenter"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="bottom|start"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+
+                    <com.iitbhu.technex18.utils.BoldModTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:textSize="16dp"
+                        android:textColor="@color/white"
+                        android:text="Startup Fair"/>
+
+                    <com.iitbhu.technex18.utils.ModTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:layout_gravity="bottom|end"
+                        android:textColor="@color/white"
+                        android:text="An amazing beginning."/>
+
+
+                </LinearLayout>
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <!--Pronites-->
+        <!--CV 9-->
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:layout_height="160dp"
+            custom:cardBackgroundColor="#00000000"
+            android:id="@+id/cv9"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:layout_width="0dp">
+
+            <FrameLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@color/md_purple_trans">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="50dp">
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="50dp" />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:padding="5dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/heart_white"
+                        android:scaleType="fitCenter"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="bottom|start"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+
+                    <com.iitbhu.technex18.utils.BoldModTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:textSize="16dp"
+                        android:textColor="@color/white"
+                        android:text="Kaleidoscope"/>
+
+                    <com.iitbhu.technex18.utils.ModTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:layout_gravity="bottom|end"
+                        android:textColor="@color/white"
+                        android:text="Forget yourself. Party Hard."/>
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--Institute Day-->
+        <!--CV 12-->
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:layout_height="160dp"
+            custom:cardBackgroundColor="#00000000"
+            android:id="@+id/cv12"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:layout_width="0dp">
+
+            <FrameLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@color/md_teal_trans">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="50dp">
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="50dp" />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:padding="5dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_institute"
+                        android:scaleType="fitCenter"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="bottom|start"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+
+                    <com.iitbhu.technex18.utils.BoldModTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:textSize="16dp"
+                        android:textColor="@color/white"
+                        android:text="Institute Day"/>
+
+                    <com.iitbhu.technex18.utils.ModTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:layout_gravity="bottom|end"
+                        android:textColor="@color/white"
+                        android:text="Har Har Mahadev."/>
+
+
+                </LinearLayout>
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <!--Corporate Conclave-->
+        <!--CV 11-->
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:layout_height="160dp"
+            custom:cardBackgroundColor="#00000000"
+            android:id="@+id/cv11"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:layout_width="0dp">
+
+            <FrameLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@color/md_light_blue_trans">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="50dp">
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="50dp" />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:padding="5dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/price_tag_white"
+                        android:scaleType="fitCenter"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="bottom|start"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+
+                    <com.iitbhu.technex18.utils.BoldModTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:textSize="16dp"
+                        android:textColor="@color/white"
+                        android:text="Corporate Conclave"/>
+
+                    <com.iitbhu.technex18.utils.ModTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:layout_gravity="bottom|end"
+                        android:textColor="@color/white"
+                        android:text="Focal Point of Corporate Activities."/>
+
+
+                </LinearLayout>
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--Exhibitions-->
+        <!--CV 10-->
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:layout_height="160dp"
+            custom:cardBackgroundColor="#00000000"
+            android:id="@+id/cv10"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:layout_width="0dp">
+
+            <FrameLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@color/md_pink_trans">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="50dp">
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="50dp" />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:padding="5dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/rocket_white"
+                        android:scaleType="fitCenter"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="bottom|start"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+
+                    <com.iitbhu.technex18.utils.BoldModTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:textSize="16dp"
+                        android:textColor="@color/white"
+                        android:text="Exhibitions"/>
+
+                    <com.iitbhu.technex18.utils.ModTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:layout_gravity="bottom|end"
+                        android:textColor="@color/white"
+                        android:text="Display of Technology and Innovation"/>
+
+
+                </LinearLayout>
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <!--Hospitality-->
+        <!--CV 5-->
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:layout_height="160dp"
+            custom:cardBackgroundColor="#00000000"
+            android:id="@+id/cv5"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:layout_width="0dp">
+
+            <FrameLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@color/md_red_trans">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="50dp">
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="50dp" />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:padding="5dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/like_white"
+                        android:scaleType="fitCenter"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="bottom|start"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+
+                    <com.iitbhu.technex18.utils.BoldModTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:textSize="16dp"
+                        android:textColor="@color/white"
+                        android:text="Hospitality"/>
+
+                    <com.iitbhu.technex18.utils.ModTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:layout_gravity="bottom|end"
+                        android:textColor="@color/white"
+                        android:text="At your service. Now. Then. Forever."/>
+
+
+                </LinearLayout>
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--Gallery-->
+        <!--CV 7-->
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:layout_height="160dp"
+            custom:cardBackgroundColor="#00000000"
+            android:id="@+id/cv7"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:layout_width="0dp">
+
+            <FrameLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@color/md_green_trans">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="50dp">
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="50dp" />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:padding="5dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/picture_white"
+                        android:scaleType="fitCenter"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="bottom|start"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+
+                    <com.iitbhu.technex18.utils.BoldModTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:textSize="16dp"
+                        android:textColor="@color/white"
+                        android:text="Gallery"/>
+
+                    <com.iitbhu.technex18.utils.ModTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:layout_gravity="bottom|end"
+                        android:textColor="@color/white"
+                        android:text="Capture the moments."/>
+
+
+                </LinearLayout>
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</LinearLayout>
+
+<!--COMMENTED SECTIONS-->
+    <!--Technex Go!-->
+    <!--CV 6-->
+    <!--<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:layout_height="160dp"
+        custom:cardBackgroundColor="#00000000"
+        android:id="@+id/cv6"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:layout_width="0dp">
+
+        <FrameLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@color/md_teal_trans">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="50dp">
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp" />
+                <ImageView
+                    android:layout_width="50dp"
+                    android:padding="5dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/mobile_outline_white"
+                    android:scaleType="fitCenter"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="bottom|start"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+
+                <com.iitbhu.technex18.utils.BoldModTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:text="Technex Go!"/>
+
+                <com.iitbhu.technex18.utils.ModTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_gravity="bottom|end"
+                    android:textColor="@color/white"
+                    android:text="Get immersed in the new reality."/>
+
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </android.support.v7.widget.CardView>
+-->
+
+    <!--Video Wall-->
+    <!--CV 8-->
+    <!--<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:layout_height="160dp"
+        custom:cardBackgroundColor="#00000000"
+        android:id="@+id/cv8"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:layout_width="0dp">
+
+        <FrameLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@color/md_blue_trans">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="50dp">
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp" />
+                <ImageView
+                    android:layout_width="50dp"
+                    android:padding="5dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/video_white"
+                    android:scaleType="fitCenter"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="bottom|start"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+
+                <com.iitbhu.technex18.utils.BoldModTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:text="Video Wall"/>
+
+                <com.iitbhu.technex18.utils.ModTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_gravity="bottom|end"
+                    android:textColor="@color/white"
+                    android:text="Replay the memories."/>
+
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </android.support.v7.widget.CardView>-->
+
+    <!--Extra Card-->
+    <!--<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:layout_height="160dp"
+        custom:cardBackgroundColor="#00000000"
+        android:id="@+id/cv10"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:layout_width="0dp">
+
+        &lt;!&ndash;<FrameLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@color/md_green_trans">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="50dp">
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp" />
+                <ImageView
+                    android:layout_width="50dp"
+                    android:padding="5dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/lecture_white"
+                    android:scaleType="fitCenter"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="bottom|start"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+
+                <com.iitbhu.technex18.utils.BoldModTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:text="Guest Lectures"/>
+
+                <com.iitbhu.technex18.utils.ModTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_gravity="bottom|end"
+                    android:textColor="@color/white"
+                    android:text="Soak in the Wisdom."/>
+
+
+            </LinearLayout>
+        </FrameLayout>&ndash;&gt;
+
+    </android.support.v7.widget.CardView>-->

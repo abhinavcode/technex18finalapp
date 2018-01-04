@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.ksoichiro.android.observablescrollview.ObservableScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <include layout="@layout/material_view_pager_placeholder"/>
+
+
+        <FrameLayout
+            android:id="@+id/carousel_home"
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_margin="4dp" />
+
+            <LinearLayout
+                android:id="@+id/carousel_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.FloatingActionButton xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/fab_margin"
+                    android:src="@android:drawable/ic_media_play"
+                    app:backgroundTint="@color/md_grey_500" /><!--
+                <android.support.design.widget.FloatingActionButton
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    app:backgroundTint="@color/alizarin"
+                    android:id="@+id/stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_margin="@dimen/fab_margin"
+                    android:src="@android:drawable/ic_media_pause" />
+
+                <android.support.design.widget.FloatingActionButton
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    app:backgroundTint="@color/belizehole"
+                    android:id="@+id/list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_margin="@dimen/fab_margin"
+                    android:src="@android:drawable/arrow_down_float" />-->
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <include layout="@layout/home_gridlayout"/>
+
+
+    </LinearLayout>
+</com.github.ksoichiro.android.observablescrollview.ObservableScrollView>

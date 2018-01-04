@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<group android:checkableBehavior="single">
+        <item android:id="@+id/nav_event" android:icon="@drawable/event"
+            android:title="My Events" />
+        &lt;!&ndash;<item android:id="@+id/nav_todo" android:icon="@drawable/todo"&ndash;&gt;
+        &lt;!&ndash;android:title="Todo" />&ndash;&gt;
+        &lt;!&ndash;<item android:id="@+id/nav_teams" android:icon="@drawable/team"&ndash;&gt;
+        &lt;!&ndash;android:title="My Teams" />&ndash;&gt;
+        &lt;!&ndash;<item android:id="@+id/nav_experience" android:icon="@drawable/experience"&ndash;&gt;
+        &lt;!&ndash;android:title="My Experiences" />&ndash;&gt;
+        <item android:id="@+id/nav_ar" android:icon="@drawable/ar"
+            android:title="Augmented Reality" />
+        <item android:id="@+id/nav_vr" android:icon="@drawable/ic_cardboard"
+            android:title="Virtual Reality" />
+    </group>-->
+
+    <!--<item android:title="">-->
+        <!--<group android:checkableBehavior="single">-->
+            <!--<menu>-->
+                <!--<item android:id="@+id/nav_settings" android:icon="@drawable/settings"-->
+                <!--android:title="Settings" />-->
+                <item android:id="@+id/nav_about_us" android:icon="@drawable/about"
+                    android:title="About Us" />
+                <!--<item android:id="@+id/nav_feedback" android:icon="@drawable/feedback"-->
+                    <!--android:title="Feedback" />-->
+                <item android:id="@+id/nav_rate_us" android:icon="@drawable/rate"
+                    android:title="Rate Us" />
+                <item android:id="@+id/nav_share_app" android:icon="@drawable/share_grey"
+                    android:title="Share App" />
+            <!--</menu>-->
+        <!--</group>-->
+    <!--</item>-->
+
+</menu>

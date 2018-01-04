@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.iitbhu.technex18.utils.BoldModTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/logo_white"
+    android:layout_width="200dp"
+    android:textColor="@color/white"
+    android:textSize="30sp"
+    android:gravity="center"
+    android:layout_height="@dimen/materialviewpager_logoHeight"
+    android:text="Technex '18" />

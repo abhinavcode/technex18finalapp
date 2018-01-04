@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:gravity="center"
+    android:fitsSystemWindows="true"
+    tools:context="com.iitbhu.technex18.dialogs.ForgotPassword">
+
+    <com.iitbhu.technex18.utils.BoldModTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:text="About Technex '17"
+        android:textColor="@color/md_blue_800"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:layout_height="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <com.iitbhu.technex18.utils.ModTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:text="So I floated and waited, hoping he wasn't going to take too long to get round to the dismissing spell. To keep myself occupied, I made blue flames lick up around the inner edges of the pentacle, as if they were seeking a way to get out and nab him. All hokum, of course. I'd already checked and the seal was drawn well enough. No spelling mistakes anywhere, unfortunately."
+            android:textColor="@color/md_grey_700"/>
+
+        <com.iitbhu.technex18.utils.BoldModTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="Developers"
+            android:textColor="@color/md_blue_800"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                android:padding="5dp"
+                android:id="@+id/logo_image1"
+                android:src="@drawable/user_m_black"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:padding="4dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <com.iitbhu.technex18.utils.ModTextView
+                    android:layout_width="match_parent"
+                    android:text="Mayank Panchal"
+                    android:id="@+id/field_text1"
+                    android:textColor="@color/md_teal_900"
+                    android:textSize="14sp"
+                    android:gravity="left"
+                    android:layout_height="wrap_content" />
+
+                <com.iitbhu.technex18.utils.ModTextView
+                    android:layout_width="match_parent"
+                    android:text="mayank.panchal.cse14@iitbhu.ac.in"
+                    android:id="@+id/value_text1"
+                    android:textColor="@color/md_grey_700"
+                    android:textSize="16sp"
+                    android:gravity="left"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                android:padding="5dp"
+                android:id="@+id/logo_image2"
+                android:src="@drawable/user_f_black"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:padding="4dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <com.iitbhu.technex18.utils.ModTextView
+                    android:layout_width="match_parent"
+                    android:text="Sampriti Mitra"
+                    android:id="@+id/field_text2"
+                    android:textColor="@color/md_teal_900"
+                    android:textSize="14sp"
+                    android:gravity="left"
+                    android:layout_height="wrap_content" />
+
+                <com.iitbhu.technex18.utils.ModTextView
+                    android:layout_width="match_parent"
+                    android:text="sampriti.mitracd.eee14@iitbhu.ac.in"
+                    android:id="@+id/value_text2"
+                    android:textColor="@color/md_grey_700"
+                    android:textSize="16sp"
+                    android:gravity="left"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                android:padding="5dp"
+                android:id="@+id/logo_image"
+                android:src="@drawable/user_m_black"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:padding="4dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <com.iitbhu.technex18.utils.ModTextView
+                    android:layout_width="match_parent"
+                    android:text="Soumyadeep Das"
+                    android:id="@+id/field_text"
+                    android:textColor="@color/md_teal_900"
+                    android:textSize="14sp"
+                    android:gravity="left"
+                    android:layout_height="wrap_content" />
+
+                <com.iitbhu.technex18.utils.ModTextView
+                    android:layout_width="match_parent"
+                    android:text="soumyadeep.das.phy14@iitbhu.ac.in"
+                    android:id="@+id/value_text"
+                    android:textColor="@color/md_grey_700"
+                    android:textSize="16sp"
+                    android:gravity="left"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:padding="4dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="7dp"
+            android:background="@color/alizarin"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                android:padding="2dp"
+                android:src="@drawable/like_white"/>
+
+            <com.iitbhu.technex18.utils.ModTextView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="Like Us"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:gravity="left"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:padding="4dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="7dp"
+            android:background="@color/md_teal_500"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                android:padding="2dp"
+                android:src="@android:drawable/star_big_on"/>
+
+            <com.iitbhu.technex18.utils.ModTextView
+                android:layout_width="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="Rate Us"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:gravity="left"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:padding="4dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="7dp"
+            android:background="@color/DarkOrange"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                android:padding="2dp"
+                android:src="@android:drawable/ic_menu_share"/>
+
+            <com.iitbhu.technex18.utils.ModTextView
+                android:layout_width="match_parent"
+                android:text="Share App"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:gravity="left"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/bgblurblueb"
+    android:padding="4dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    <LinearLayout
+        android:id="@+id/layout_register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <!--<FrameLayout-->
+            <!--android:layout_height="110dp"-->
+            <!--android:layout_width="110dp"-->
+            <!--android:layout_marginTop="50dp"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:layout_gravity="center_horizontal">-->
+
+
+            <!--<com.iitbhu.technex18.utils.RoundedImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:src="@drawable/exhibition"-->
+                <!--android:scaleType="center"-->
+                <!--android:id="@+id/imageviewreg"/>-->
+            <!--<com.iitbhu.technex18.utils.RoundedImageView-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_gravity="bottom|right"-->
+                <!--android:src="@drawable/matcamera"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:id="@+id/imageviewregbut"/>-->
+
+        <!--</FrameLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:orientation="vertical"
+            android:layout_marginTop="0dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@color/transparent_white_percent_10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitCenter"
+                    android:padding="5dp"
+                    android:src="@drawable/account_outline"
+                    android:background="@color/transparent_black_percent_25"
+                    />
+
+                <EditText
+                    android:id="@+id/et_name_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="First Name"
+                    android:textSize="14dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/md_blue_800"
+                    android:textColor="@color/md_blue_800"
+                    android:layout_weight="0.5"
+                    android:paddingLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_vertical"
+                    android:background="@color/transparent_white_percent_25"/>
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitCenter"
+                    android:padding="5dp"
+                    android:src="@drawable/account_outline"
+                    android:background="@color/transparent_black_percent_25"
+                    />
+
+                <EditText
+                    android:id="@+id/et_name_last"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:hint="Last Name"
+                    android:singleLine="true"
+                    android:paddingLeft="5dp"
+                    android:layout_weight="0.5"
+                    android:textColorHint="@color/md_blue_800"
+                    android:textColor="@color/md_blue_800"
+                    android:gravity="center_vertical"
+                    android:background="@color/transparent_white_percent_25"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitCenter"
+                    android:padding="5dp"
+                    android:src="@drawable/email_open"
+                    android:background="@color/transparent_black_percent_25"
+                    />
+
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/et_email_reg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Email"
+                    android:textSize="14dp"
+                    android:paddingLeft="5dp"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@color/md_blue_800"
+                    android:textColor="@color/md_blue_800"
+                    android:gravity="center_vertical"
+                    android:background="@color/transparent_white_percent_25"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitCenter"
+                    android:padding="5dp"
+                    android:src="@drawable/lock_out"
+                    android:background="@color/transparent_black_percent_25"
+
+
+                    />
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/et_password_reg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Password"
+                    android:paddingLeft="5dp"
+                    android:inputType="textPassword"
+                    android:layout_weight="0.5"
+                    android:textSize="14dp"
+                    android:layout_marginRight="5dp"
+                    android:textColorHint="@color/md_blue_800"
+                    android:textColor="@color/md_blue_800"
+                    android:gravity="center_vertical"
+                    android:background="@color/transparent_white_percent_25"/>
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitCenter"
+                    android:padding="5dp"
+                    android:src="@drawable/lock_out"
+                    android:background="@color/transparent_black_percent_25"
+
+
+                    />
+
+                <EditText
+                    android:id="@+id/et_password_confirm"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Confirm"
+                    android:paddingLeft="5dp"
+                    android:inputType="textPassword"
+                    android:textSize="14dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/md_blue_800"
+                    android:textColorHint="@color/md_blue_800"
+                    android:background="@color/transparent_white_percent_25"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitCenter"
+                    android:padding="5dp"
+                    android:src="@drawable/cellphone"
+                    android:background="@color/transparent_black_percent_25"
+                    />
+
+
+                <EditText
+                    android:id="@+id/et_contact"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Mobile"
+                    android:textSize="14dp"
+                    android:paddingLeft="5dp"
+                    android:inputType="phone"
+                    android:gravity="center_vertical"
+                    android:textColorHint="@color/md_blue_800"
+                    android:textColor="@color/md_blue_800"
+                    android:background="@color/transparent_white_percent_25"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitCenter"
+                    android:padding="5dp"
+                    android:src="@drawable/medal_of_honor_white"
+                    android:background="@color/transparent_black_percent_25"
+                    />
+
+
+                <EditText
+                    android:id="@+id/et_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:hint="Year"
+                    android:textSize="14dp"
+                    android:paddingLeft="5dp"
+                    android:inputType="number"
+                    android:gravity="center_vertical"
+                    android:textColorHint="@color/md_blue_800"
+                    android:textColor="@color/md_blue_800"
+                    android:background="@color/transparent_white_percent_25"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitCenter"
+                    android:padding="5dp"
+                    android:src="@drawable/home_white"
+                    android:background="@color/transparent_black_percent_25"
+                    />
+
+
+                <EditText
+                    android:id="@+id/et_college"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="College"
+                    android:singleLine="true"
+                    android:textSize="14dp"
+                    android:paddingLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:textColorHint="@color/md_blue_800"
+                    android:textColor="@color/md_blue_800"
+                    android:background="@color/transparent_white_percent_25"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@color/md_pink_800"
+            android:text="REGISTER"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/reg_but"
+            android:textSize="18dp"
+            android:textColor="@color/transparent_white_hex_15"/>
+
+
+
+
+
+
+
+        <com.iitbhu.technex18.utils.ModTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Already Registered?"
+            android:textSize="14dp"
+            android:textColor="@color/white"/>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="LOG IN NOW"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/log_but"
+            android:textColorHighlight="@color/grey"
+            android:textSize="14dp"
+            android:textColor="@color/transparent_white_percent_55"
+            android:background="@color/md_blue_800"
+            />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

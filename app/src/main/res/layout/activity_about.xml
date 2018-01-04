@@ -1,0 +1,206 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bggradientblack"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/ic_aboutdev"
+            android:scaleType="centerInside"
+            android:paddingTop="20dp"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_height="240dp" />
+
+        <com.iitbhu.technex18.utils.ModTextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Technex is the annual Techno-Management extravaganza of IIT Varanasi."
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:layout_height="wrap_content" />
+
+
+        <com.iitbhu.technex18.utils.BoldModTextView
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Technex'17 Official Android App Developed By"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:background="@drawable/strokewhite"
+            android:layout_height="wrap_content">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/user_f_white"
+                    android:layout_height="50dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.iitbhu.technex18.utils.BoldModTextView
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:text="Sampriti Mitra"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="14sp"
+                        android:layout_height="wrap_content" />
+
+                    <com.iitbhu.technex18.utils.ModTextView
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:text="sampriti.mitracd.eee14@iitbhu.ac.in"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="14sp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/user_m_white"
+                    android:layout_height="50dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.iitbhu.technex18.utils.BoldModTextView
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:text="Mayank Panchal"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="14sp"
+                        android:layout_height="wrap_content" />
+
+                    <com.iitbhu.technex18.utils.ModTextView
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:text="mayank.panchal.cse14@iitbhu.ac.in"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="14sp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/user_m_white"
+                    android:layout_height="50dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.iitbhu.technex18.utils.BoldModTextView
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:text="Soumyadeep Das"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="14sp"
+                        android:layout_height="wrap_content" />
+
+                    <com.iitbhu.technex18.utils.ModTextView
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:text="soumyadeep.das.phy14@iitbhu.ac.in"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="14sp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <com.iitbhu.technex18.utils.ModTextView
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Any queries, suggestions or opinions, feel free to drop us a mail. We will be happy to hear from you."
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:layout_height="wrap_content" />
+
+        <com.iitbhu.technex18.utils.BoldModTextView
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="Technex '17"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:layout_height="wrap_content" />
+
+        <com.iitbhu.technex18.utils.ModTextView
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="Towards Sustainablility"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</ScrollView>
