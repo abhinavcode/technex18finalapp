@@ -17,15 +17,16 @@ import android.util.Log;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
-
 import com.iitbhu.technex18.R;
-import com.iitbhu.technex18.activities.HomeActivity;
 import com.iitbhu.technex18.activities.Splash;
 import com.iitbhu.technex18.database.DbMethods;
-import com.iitbhu.technex18.fragments.UserFragment;
 
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.Calendar;
 import java.util.Map;
+import java.util.Random;
 
 /**
  * Created by Mayank on 2/4/2017.
@@ -36,10 +37,10 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
     private static final String TAG = "MyFirebaseMsgService";
 
     DbMethods dbMethods;
-
-    String title = "Technex '17";
+    int db=0;
+    String title = "Technex '18";
     String body = "";
-
+    String image="";
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
         //Displaying data in log
@@ -68,13 +69,38 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             Log.d("NOTIF TITLE CATCH", e.toString());
         }
 
-        if (title.equals("")) {
-            title = "Technex '17";
+        try {
+            image = (String) data.get("image");
+        } catch (Exception e) {
+            e.printStackTrace();
+            Log.d("NOTIF IMAGE CATCH", e.toString());
         }
-        long id = dbMethods.insertUpdates(body, Calendar.getInstance().getTimeInMillis(), title);
+        try {
+            db = Integer.parseInt((String) data.get("db"));
+        } catch (Exception e) {
+            e.printStackTrace();
+            Log.d("NOTIF db CATCH", e.toString());
+        }
+        if (title.equals("")) {
+            title = "Technex '18";
+        }
+        String TAG="NOTIF";
+        Random r=new Random();
+        long id= r.nextInt();
+        Log.d("db val",""+db);
+        if(db==1)
+            id = dbMethods.insertUpdates(body, Calendar.getInstance().getTimeInMillis(), title);
 
+        if(image==null) {
+            Log.d(TAG,"without image");
+            sendNotification(id, body, title);
+        }
+        else {
+            Log.d(TAG,"with image");
+            Bitmap bitmap = getBitmapfromUrl(image);
 
-        sendNotification(id, body, title);
+            sendNotification(id, body, title, bitmap);
+        }
     }
 
     //This method is only generating push notification
@@ -103,5 +129,58 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
                 (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 
         notificationManager.notify((int)id, notificationBuilder.build());
+    }
+
+    //This method is only generating push notification
+    //It is same as we did in earlier posts
+    private void sendNotification(long id, String messageBody, String title,Bitmap image) {
+        Intent intent = new Intent(this, Splash.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent,
+                PendingIntent.FLAG_ONE_SHOT);
+
+        long[] pattern = {500,500,500,500,500};
+
+
+        Uri defaultSoundUri= RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+        NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this)
+                .setSmallIcon(R.drawable.logo_white)
+                .setLargeIcon(image)
+                .setContentTitle(title)
+                .setStyle(new NotificationCompat.BigPictureStyle().bigPicture(image).setSummaryText(messageBody))
+                .setContentText(messageBody)
+                .setAutoCancel(true)
+                .setTicker("Technex '18")
+                .setVibrate(pattern)
+                .setSound(defaultSoundUri)
+                .setContentIntent(pendingIntent);
+
+        NotificationManager notificationManager =
+                (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+
+        notificationManager.notify((int)id, notificationBuilder.build());
+    }
+
+    /*
+   *To get a Bitmap image from the URL received
+   * */
+    public Bitmap getBitmapfromUrl(String imageUrl) {
+        Log.d("BITMAP","image down");
+        try {
+            URL url = new URL(imageUrl);
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setDoInput(true);
+            connection.connect();
+            InputStream input = connection.getInputStream();
+            Bitmap bitmap = BitmapFactory.decodeStream(input);
+            return bitmap;
+
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            Log.d("BITMAP","image cant");
+            e.printStackTrace();
+            return null;
+
+        }
     }
 }

@@ -31,15 +31,15 @@ import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 import com.iitbhu.technex18.R;
 import com.iitbhu.technex18.activities.HomeActivity;
 import com.iitbhu.technex18.activities.Splash;
 import com.iitbhu.technex18.database.DbMethods;
 import com.iitbhu.technex18.network.URLs;
 import com.iitbhu.technex18.utils.Constants;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -313,8 +313,8 @@ public class SigninFragment extends Fragment implements Constants, URLs{
 
                         String notifTitle1, notifTitle2, notifTitle3, notifDesc1, notifDesc2, notifDesc3;
 
-                        notifTitle1 = "Welcome to Technex '17";
-                        notifDesc1 = "Hi " + myprefs.getString(NAME, "Technex User") + ", experience Technex like never before with the  Official Technex '17 Android Application.";
+                        notifTitle1 = "Welcome to Technex '18";
+                        notifDesc1 = "Hi " + myprefs.getString(NAME, "Technex User") + ", experience Technex like never before with the  Official Technex '18 Android Application.";
 
                         notifTitle3 = "Important Guidelines";
                         notifDesc3 = "Your e-ID Card will be verified by the officials at the registration desk through a secret PIN. You cannot log in on more than one device at a time, so to avoid any conflicts, we recommend you to log out only through the logout button. Tampering and duplicating the e-ID Card will be penalised accordingly.";

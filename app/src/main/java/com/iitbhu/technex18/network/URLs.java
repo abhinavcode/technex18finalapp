@@ -19,21 +19,21 @@ public interface URLs {
     String IMAGE_CONTENT = HOST+"image_content/";
 
     //Remote URLs
-    String LOGIN_URL = "http://technex2017.herokuapp.com/api/login ";
-    String REGISTER_URL = "http://technexuser.herokuapp.com/api/register/";
-    String GUEST_LECTURES_URL = "https://technexuser.herokuapp.com/api/guestLecture/";
-    String EVENTS_URL = "https://technexuser.herokuapp.com/api/eventApi/";
-    String EVENT_REG = "https://technexuser.herokuapp.com/api/eventReg/";
-    String WORKSHOPS_URL = "https://technexuser.herokuapp.com/api/workshops/";
-    String STARTUP_FAIR_URL = "https://technexuser.herokuapp.com/api/startUpFairApi/";
-    String PRONITES_URL = "https://technexuser.herokuapp.com/api/pronitesApi/";
-    String INSTITUTE_DAY_URL = "https://technexuser.herokuapp.com/api/instituteDayApi/";
-    String CORPORATE_CONCLAVE_URL = "https://technexuser.herokuapp.com/api/corporateConclaveApi/";
-    String EXHIBITIONS_URL = "https://technexuser.herokuapp.com/api/exhibitionsApi/";
-    String HOSPITALITY_URL = "https://technexuser.herokuapp.com/api/hospitalityApi/";
+    String LOGIN_URL = "http://technex2017.herokuapp.com/api/login/";
+    String REGISTER_URL = "http://technex2017.herokuapp.com/api/register/";
+    String GUEST_LECTURES_URL = "https://technex2017.herokuapp.com/api/guestLecture/";
+    String EVENTS_URL = "https://technex2017.herokuapp.com/api/eventApi/";
+    String EVENT_REG = "https://technex2017.herokuapp.com/api/eventRegistration/";
+    String WORKSHOPS_URL = "https://technex2017.herokuapp.com/api/workshops/";
+    String STARTUP_FAIR_URL = "https://technex2017.herokuapp.com/api/startUpFairApi/";
+    String PRONITES_URL = "https://technex2017.herokuapp.com/api/pronitesApi/";
+    String INSTITUTE_DAY_URL = "https://technex2017.herokuapp.com/api/instituteDayApi/";
+    String CORPORATE_CONCLAVE_URL = "https://technex2017.herokuapp.com/api/corporateConclaveApi/";
+    String EXHIBITIONS_URL = "https://technex2017.herokuapp.com/api/exhibitionsApi/";
+    String HOSPITALITY_URL = "https://technex2017.herokuapp.com/api/hospitalityApi/";
     String FORGOT_PASSWORD_URL = "https://technex2017.herokuapp.com/api/forgotPass/ ";
-    String LOGOUT_URL = "https://technex2017.herokuapp.com/api/logout";
-    String TOKEN_URL = "https://technexuser.herokuapp.com/api/notificationToken/";
+    String LOGOUT_URL = "https://technex2017.herokuapp.com/api/logout/";
+    String TOKEN_URL = "https://technex2017.herokuapp.com/api/notificationToken/";
 //    String EVENT_REGISTER_URL_REMOTE = "http://www.technex.in/app/register_event/";
 //    String USER_TEAMS = "http://www.technex.in/app/userteams/";
 //    String REGISTER_URL_LOCAL = "http://52.24.177.3/register.php";

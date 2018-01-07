@@ -7,7 +7,6 @@ package com.iitbhu.technex18.utils;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.DefaultRetryPolicy;
@@ -20,12 +19,11 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.FirebaseInstanceIdService;
+import com.iitbhu.technex18.network.URLs;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import com.iitbhu.technex18.network.URLs;
 
-import java.util.EnumMap;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -72,7 +70,9 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService imple
 //        params.put("email", myprefs.getString(EMAIL, ""));
         params.put("notificationToken", token);
         Log.d("PARAMS TOKEN", params.toString());
-
+        if(myprefs.getBoolean(REGISTERED,false)){
+            params.put("technexId",myprefs.getString(TECHNEX_ID, "technexId"));
+        }
         String url = TOKEN_URL;
 
         JsonObjectRequest strReq = new JsonObjectRequest(Request.Method.POST,

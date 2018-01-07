@@ -74,5 +74,6 @@ public interface Constants {
 
     String FCM_TOKEN = "fcm_token";
     String IS_FCM_TOKEN_SENT = "is_fcm_token_sent";
+    String IS_FCM_TOKEN_SENT_WITH_ID="is_fcm_token_sent_with_id";
 
 }

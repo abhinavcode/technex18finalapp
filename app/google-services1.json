@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "889074866603",
+    "firebase_url": "https://technex-17.firebaseio.com",
+    "project_id": "technex-17",
+    "storage_bucket": "technex-17.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889074866603:android:97caed5c8c04945b",
+        "android_client_info": {
+          "package_name": "com.iitbhu.technex18"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "889074866603-5konluf4b8of8osu1jrt1h2823n9d4l1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxRuavAFSrdGQh6hOEwY2z3v6u-uJkPGQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

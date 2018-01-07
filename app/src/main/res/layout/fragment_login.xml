@@ -34,7 +34,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:textSize="30dp"
-                android:text="Technex 18"
+                android:text="Technex'18"
                 android:textColor="@color/white"/>
 
 

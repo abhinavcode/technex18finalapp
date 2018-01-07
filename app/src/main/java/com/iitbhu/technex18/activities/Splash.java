@@ -118,7 +118,7 @@ public class Splash extends AppCompatActivity implements Constants, URLs {
                     boolean loc=myprefs.getBoolean(REGISTERED, false);
 
 
-                    if(!loc){
+                    if(loc){
                         Intent i = new Intent(Splash.this, HomeActivity.class);
                         startActivity(i);
                         finish();
@@ -140,10 +140,78 @@ public class Splash extends AppCompatActivity implements Constants, URLs {
     }
 
     public void checkAndStoreToken() {
-
+        String token1 = myprefs.getString(FCM_TOKEN, null);
+        Log.d("token",token1);
         final String TAG = "SPLASH TOKEN";
+        if ( ! (myprefs.getBoolean(IS_FCM_TOKEN_SENT_WITH_ID, false)) && (myprefs.getBoolean(REGISTERED, false)) ) {
 
-        if ( ! (myprefs.getBoolean(IS_FCM_TOKEN_SENT, false)) ) {
+            String token = myprefs.getString(FCM_TOKEN, null);
+
+            if (token != null) {
+
+                queue = Volley.newRequestQueue(this);
+
+
+                Map<String, String> params = new HashMap<String, String>();
+//                params.put("email", myprefs.getString(EMAIL, ""));
+                params.put("notificationToken", token);
+                params.put("technexId",myprefs.getString(TECHNEX_ID, "technexId"));
+                Log.d("PARAMS TOKEN", params.toString());
+
+                String url = TOKEN_URL;
+
+                JsonObjectRequest strReq = new JsonObjectRequest(Request.Method.POST,
+                        url, new JSONObject(params), new Response.Listener<JSONObject>() {
+
+                    @Override
+                    public void onResponse(JSONObject resp) {
+                        Log.d(TAG, resp.toString());
+
+
+                        try {
+                            Log.d(TAG, "Token parser executed!");
+
+                            int status = resp.getInt("status");
+
+                            if (status == 1) {
+                                SharedPreferences.Editor editor = myprefs.edit();
+                                editor.putBoolean(IS_FCM_TOKEN_SENT_WITH_ID, true);
+                                editor.commit();
+                            }
+
+                            Log.d(TAG, "Token parser executed properly!");
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                            Log.d(TAG, "Token parser failed!");
+                        }
+
+
+                    }
+                }, new Response.ErrorListener() {
+
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        VolleyLog.d(TAG, "Error: " + error.getMessage());
+//                Toast.makeText(getActivity(),"Network Unreachable!",Toast.LENGTH_SHORT).show();
+                    }
+                }) {
+                    @Override
+                    public Map<String, String> getHeaders() throws AuthFailureError {
+                        Map<String, String> headers = new HashMap<String, String>();
+                        headers.put("Content-Type", "application/json");
+                        Log.d("HEADERS TOKEN", headers.toString());
+                        return headers;
+                    }
+                };
+                strReq.setRetryPolicy(new DefaultRetryPolicy(
+                        30000,
+                        10,
+                        DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+                queue.add(strReq);
+
+            }
+        }
+       else if ( ! (myprefs.getBoolean(IS_FCM_TOKEN_SENT, false)) ) {
 
             String token = myprefs.getString(FCM_TOKEN, null);
 

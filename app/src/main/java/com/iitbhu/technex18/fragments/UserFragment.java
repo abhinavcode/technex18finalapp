@@ -26,9 +26,6 @@ import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 import com.iitbhu.technex18.R;
 import com.iitbhu.technex18.activities.LoginActivity;
 import com.iitbhu.technex18.activities.QRActivity;
@@ -37,6 +34,9 @@ import com.iitbhu.technex18.network.URLs;
 import com.iitbhu.technex18.utils.BoldModTextView;
 import com.iitbhu.technex18.utils.Constants;
 import com.iitbhu.technex18.utils.ModTextView;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -141,7 +141,7 @@ public class UserFragment extends Fragment implements Constants, URLs {
 
         if (myprefs.getBoolean(VERIFIED, false)) {
             tvVerified.setVisibility(View.VISIBLE);
-            btnLogout.setVisibility(View.GONE);
+//            btnLogout.setVisibility(View.GONE);
             btnPin.setVisibility(View.GONE);
             tvHostel.setText(myprefs.getString(HOSTEL, ""));
             layoutIdCard.setBackgroundResource(R.drawable.gradientgreendark);
@@ -393,7 +393,7 @@ public class UserFragment extends Fragment implements Constants, URLs {
                                 } else {
                                     tvHostel.setText(hostel);
                                     tvVerified.setVisibility(View.VISIBLE);
-                                    btnLogout.setVisibility(View.GONE);
+//                                    btnLogout.setVisibility(View.GONE);
                                     SharedPreferences.Editor editor = myprefs.edit();
                                     editor.putBoolean(VERIFIED, true);
                                     editor.putString(HOSTEL, hostel);

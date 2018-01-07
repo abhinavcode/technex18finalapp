@@ -1,27 +1,35 @@
 {
   "project_info": {
-    "project_number": "889074866603",
-    "firebase_url": "https://technex-17.firebaseio.com",
-    "project_id": "technex-17",
-    "storage_bucket": "technex-17.appspot.com"
+    "project_number": "824672571666",
+    "firebase_url": "https://technex-18.firebaseio.com",
+    "project_id": "technex-18",
+    "storage_bucket": "technex-18.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:889074866603:android:97caed5c8c04945b",
+        "mobilesdk_app_id": "1:824672571666:android:036a6090280c706a",
         "android_client_info": {
           "package_name": "com.iitbhu.technex18"
         }
       },
       "oauth_client": [
         {
-          "client_id": "889074866603-5konluf4b8of8osu1jrt1h2823n9d4l1.apps.googleusercontent.com",
+          "client_id": "824672571666-78qbkom72bib7uvpakh71jj6isf2ie6u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iitbhu.technex18",
+            "certificate_hash": "7c484d6bcb619706098e8329ba2d1870cae2a788"
+          }
+        },
+        {
+          "client_id": "824672571666-v4eub6neang93hjcab3vs68s4se69h3m.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBxRuavAFSrdGQh6hOEwY2z3v6u-uJkPGQ"
+          "current_key": "AIzaSyBiEIGBLQcTSvY0l9_pNXMUc8LpmsGMMNw"
         }
       ],
       "services": {
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "824672571666-v4eub6neang93hjcab3vs68s4se69h3m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
