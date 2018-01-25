@@ -17,7 +17,7 @@ import com.iitbhu.technex18.adapters.EventDetailAdapter;
 import com.iitbhu.technex18.adapters.RecyclerItemClickListener;
 
 /**
- * Created by root on 15/12/16.
+ * Created by Abhinav on 02/01/2018.
  */
 public class EventDetailFragment extends Fragment {
     /**

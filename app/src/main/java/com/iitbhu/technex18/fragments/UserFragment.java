@@ -44,7 +44,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 /**
- * Created by root on 18/9/16.
+ * Created by Abhinav on 02/01/2018.
  */
 public class UserFragment extends Fragment implements Constants, URLs {
 
@@ -233,8 +233,14 @@ public class UserFragment extends Fragment implements Constants, URLs {
                                 SharedPreferences.Editor editor=myprefs.edit();
                                 editor.clear();
                                 editor.putLong(LAST_UPDATE_TIME,0);
+
+                                editor.putBoolean(REGISTERED,false);
+                                editor.putBoolean(IS_FCM_TOKEN_SENT_WITH_ID,false);
+                                editor.putBoolean(VERIFIED, false);
+                                editor.putString(HOSTEL, "");
                                 editor.commit();
                                 dbMethods.deleteAllUpdates();
+
                                 Intent intent = new Intent(getActivity(), LoginActivity.class);
                                 startActivity(intent);
                                 getActivity().finish();

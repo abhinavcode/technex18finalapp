@@ -10,7 +10,7 @@
     android:layout_height="match_parent">
 <!--<RelativeLayout-->
     <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent">-->
+-    <!--android:layout_height="match_parent">-->
 
     <android.support.design.widget.CoordinatorLayout
         android:id="@+id/layout_main"
@@ -50,7 +50,6 @@
         android:layout_marginLeft="10dp"
         fab:menu_fab_size="normal"
         fab:menu_showShadow="true"
-        fab:menu_shadowColor="#66000000"
         fab:menu_shadowRadius="4dp"
         fab:menu_shadowXOffset="1dp"
         fab:menu_shadowYOffset="3dp"
@@ -58,7 +57,7 @@
         fab:menu_colorPressed="#E75043"
         fab:menu_colorRipple="#99FFFFFF"
         fab:menu_animationDelayPerItem="50"
-        fab:menu_icon="@android:drawable/ic_input_add"
+        fab:menu_icon="@drawable/technexallwhite"
         fab:menu_buttonSpacing="0dp"
         fab:menu_labels_margin="0dp"
         fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
@@ -87,31 +86,65 @@
         <!--fab:menu_fab_hide_animation="@anim/my_hide_animation"-->
 
         <com.github.clans.fab.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/fabinsta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
-        android:layout_marginBottom="8dp"
-        android:layout_marginRight="8dp"
-        android:src="@drawable/talk"
-        app:fab_colorNormal="#DA4336"
-        app:fab_colorPressed="#E75043"
-        app:fab_colorRipple="#99FFFFFF"
-        app:fab_showShadow="true"
-        app:fab_shadowColor="#66000000"
-        app:fab_shadowRadius="4dp"
-        app:fab_shadowXOffset="1dp"
-        app:fab_shadowYOffset="3dp"
+        android:src="@drawable/insta"
+        app:fab_colorNormal="#fb3958"
+        app:fab_colorPressed="#f52d4d"
+        app:fab_colorRipple="#99fb3958"
         app:fab_size="normal"
         app:fab_showAnimation="@anim/fab_scale_up"
         app:fab_hideAnimation="@anim/fab_scale_down"
-        app:fab_label="Instagram"
-        app:fab_progress_color="#FF009688"
-        app:fab_progress_backgroundColor="#4D000000"
-        app:fab_progress_indeterminate="false"
-        app:fab_progress_max="100"
-        app:fab_progress="0"
-        app:fab_progress_showBackground="true"/>
+        app:fab_label="Instagram"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabfb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/ic_fb"
+                app:fab_colorNormal="#3B5998"
+                app:fab_colorPressed="#37579c"
+                app:fab_colorRipple="#9937579c"
+                app:fab_size="normal"
+                app:fab_showAnimation="@anim/fab_scale_up"
+                app:fab_hideAnimation="@anim/fab_scale_down"
+                app:fab_label="Facebook"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabtwitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:src="@drawable/ic_twitter"
+                app:fab_colorNormal="#00aced"
+                app:fab_colorPressed="#02b5f9"
+                app:fab_colorRipple="#9900aced"
+                app:fab_size="normal"
+                app:fab_showAnimation="@anim/fab_scale_up"
+                app:fab_hideAnimation="@anim/fab_scale_down"
+                app:fab_label="Twitter"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabyoutube"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:src="@drawable/ic_youtube"
+                android:tint="@color/white"
+                android:scaleType="fitXY"
+                app:fab_colorNormal="#cc181e"
+                app:fab_colorPressed="#bf171d"
+                app:fab_colorRipple="#99cc181e"
+                app:fab_size="normal"
+                app:fab_showAnimation="@anim/fab_scale_up"
+                app:fab_hideAnimation="@anim/fab_scale_down"
+                app:fab_label="Youtube"
+             />
         </com.github.clans.fab.FloatingActionMenu>
     </android.support.design.widget.CoordinatorLayout>
     <android.support.design.widget.NavigationView

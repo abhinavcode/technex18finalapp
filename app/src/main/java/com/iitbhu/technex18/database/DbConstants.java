@@ -1,10 +1,10 @@
 package com.iitbhu.technex18.database;
 
 /**
- * Created by mayank on 18/09/16.
+ * Created by Abhinav on 02/01/2018.
  */
 public interface DbConstants {
-    String DB_NAME= "technex17.db";
+    String DB_NAME= "technex18.db";
     int DB_VERSION = 2 ;
 
     String INTEGER_PRIMARY_KEY_AUTOINCREMENT = " INTEGER PRIMARY KEY AUTOINCREMENT ";

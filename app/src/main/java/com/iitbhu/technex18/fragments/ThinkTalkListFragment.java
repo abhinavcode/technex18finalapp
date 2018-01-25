@@ -28,7 +28,7 @@ import static com.iitbhu.technex18.database.DbConstants.COL_GUEST_LECTURE_LECTUR
 import static com.iitbhu.technex18.database.DbConstants.COL_GUEST_LECTURE_NAME;
 
 /**
- * Created by root on 18/9/16.
+ * Created by Abhinav on 02/01/2018.
  */
 public class ThinkTalkListFragment extends Fragment {
     public ThinkTalkListFragment() {

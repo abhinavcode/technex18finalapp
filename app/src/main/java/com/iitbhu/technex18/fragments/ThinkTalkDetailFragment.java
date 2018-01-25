@@ -1,7 +1,6 @@
 package com.iitbhu.technex18.fragments;
 
 import android.database.Cursor;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -11,18 +10,16 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 
 import com.github.florent37.materialviewpager.MaterialViewPager;
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
-import com.squareup.picasso.Picasso;
-
 import com.iitbhu.technex18.R;
 import com.iitbhu.technex18.database.DbMethods;
 import com.iitbhu.technex18.utils.BoldModTextView;
 import com.iitbhu.technex18.utils.ModTextView;
 import com.iitbhu.technex18.utils.RoundedImageView;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -33,7 +30,7 @@ import static com.iitbhu.technex18.database.DbConstants.COL_GUEST_LECTURE_LECTUR
 import static com.iitbhu.technex18.database.DbConstants.COL_GUEST_LECTURE_NAME;
 
 /**
- * Created by florentchampigny on 24/04/15.
+ * Created by Abhinav on 02/01/2018.
  */
 public class ThinkTalkDetailFragment extends Fragment {
 

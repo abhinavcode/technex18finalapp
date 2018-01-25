@@ -15,7 +15,7 @@ import com.iitbhu.technex18.utils.BoldModTextView;
 import com.iitbhu.technex18.utils.ModTextView;
 
 /**
- * Created by Soumyadeep on 02-Dec-15.
+ * Created by Abhinav on 02/01/2018.
  */
 public class NavigHomeAdapter extends RecyclerView.Adapter<NavigHomeAdapter.ViewHolder> {
     private String[] mTitle, mSubtitle;

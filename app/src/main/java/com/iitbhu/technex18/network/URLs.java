@@ -1,7 +1,7 @@
 package com.iitbhu.technex18.network;
 
 /**
- * Created by mayank on 25/9/16.
+ * Created by Abhinav on 02/01/2018.
  */
 
 public interface URLs {

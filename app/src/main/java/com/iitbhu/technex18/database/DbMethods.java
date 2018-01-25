@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
 /**
- * Created by shriyansh on 18/12/15.
+ * Created by Abhinav on 02/01/2018.
  */
 public class DbMethods implements DbConstants{
 
@@ -53,7 +53,7 @@ public class DbMethods implements DbConstants{
         values.put(COL_WORKSHOP_TIMESTAMP, timestamp);
         values.put(COL_WORKSHOP_IMAGE, image);
         long id=db.insert(TBL_WORKSHOP,null,values);
-        Log.d(TAG + " WORKSHOPS",values.toString());
+//        Log.d(TAG + " WORKSHOPS",values.toString());
         return id;
     }
 
@@ -140,7 +140,7 @@ public class DbMethods implements DbConstants{
         values.put(COL_GUEST_LECTURE_DESIGNATION, designation);
         values.put(COL_GUEST_LECTURE_IMAGE, image);
         long id=db.insert(TBL_GUEST_LECTURE, null, values);
-        Log.d(TAG+" GUEST",values.toString());
+//        Log.d(TAG+" GUEST",values.toString());
         return id;
     }
 
@@ -226,9 +226,12 @@ public class DbMethods implements DbConstants{
     }
 
     public Cursor queryEvents(String[] columns, String selection, String[] selectionArgs, String groupBy, String having, String orderBy){
-        return  db.query(TBL_EVENTS,columns,selection,selectionArgs,groupBy,having,orderBy);
+        Log.d(TAG +"query events",db.query(TBL_EVENTS,columns,selection,selectionArgs,groupBy,having,orderBy).toString());
+        return db.query(TBL_EVENTS,columns,selection,selectionArgs,groupBy,having,orderBy);
     }
-
+    public Cursor queryEventsRaw(String event){
+        return db.rawQuery("SELECT * FROM "+ TBL_EVENTS + " WHERE "+ COL_EVENTS_PARENT_CATEGORY +" = '"+event+"' ORDER BY " + COL_EVENTS_EVENT_ORDER,null);
+    }
     public void deleteEvents(long id) {
         db.delete(TBL_EVENTS, COL_EVENTS_ID+" = ? ",new String[]{id+""});
     }
@@ -262,9 +265,14 @@ public class DbMethods implements DbConstants{
     }
 
     public Cursor queryEventOptions(String[] columns, String selection, String[] selectionArgs, String groupBy, String having, String orderBy){
-        return  db.query(TBL_EVENTS_OPTIONS,columns,selection,selectionArgs,groupBy,having,orderBy);
-    }
 
+        Log.d("query events",db.query(TBL_EVENTS_OPTIONS,columns,selection,selectionArgs,groupBy,having,orderBy).toString());
+        return db.query(TBL_EVENTS_OPTIONS,columns,selection,selectionArgs,groupBy,having,orderBy);
+    }
+    public Cursor queryEventOptionsRaw(String eventName){
+
+        return db.rawQuery("SELECT * FROM "+TBL_EVENTS_OPTIONS+" WHERE "+COL_EVENTS_OPTIONS_EVENT+" = '"+eventName+"' ORDER BY "+COL_EVENTS_OPTIONS_ORDER,null);
+    }
     public void deleteEventOptions(long id) {
         db.delete(TBL_EVENTS_OPTIONS, COL_EVENTS_OPTIONS_ID+" = ? ",new String[]{id+""});
     }

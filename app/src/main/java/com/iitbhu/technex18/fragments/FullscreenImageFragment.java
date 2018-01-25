@@ -12,6 +12,9 @@ import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView;
 import com.iitbhu.technex18.R.id;
 import com.iitbhu.technex18.R.layout;
 
+/**
+ * Created by Abhinav on 02/01/2018.
+ */
 public class FullscreenImageFragment extends Fragment {
 
     private static final String BUNDLE_ASSET = "asset";

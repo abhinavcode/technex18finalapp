@@ -19,10 +19,8 @@ import com.iitbhu.technex18.utils.BoldModTextView;
 
 
 /**
- * Created by root on 1/10/16.
+ * Created by Abhinav on 02/01/2018.
  */
-
-
 
 
 public class WorkshopAdapter extends RecyclerView.Adapter<WorkshopAdapter.ViewHolder> {

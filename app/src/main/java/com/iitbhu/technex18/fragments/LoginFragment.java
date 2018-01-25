@@ -47,7 +47,7 @@ import java.util.Map;
 
 
 /**
- * Created by mayank on 18/9/16.
+ * Created by Abhinav on 02/01/2018.
  */
 public class LoginFragment extends Fragment implements Constants, URLs {
 

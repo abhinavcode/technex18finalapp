@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 /**
- * Created by Soumyadeep on 07-Jan-16.
+ * Created by Abhinav on 02/01/2018.
  */
 public class DbNews {
     public static String KEY_ROWID="_id";

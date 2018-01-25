@@ -149,7 +149,7 @@
                         android:text="LOG IN"
                         android:textSize="14dp"
                         android:textColorHighlight="@color/grey"
-                        android:textColor="@color/transparent_white_percent_55"/>
+                        android:textColor="@color/white"/>
 
 
 

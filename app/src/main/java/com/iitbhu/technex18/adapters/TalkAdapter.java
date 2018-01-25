@@ -2,7 +2,6 @@ package com.iitbhu.technex18.adapters;
 
 import android.annotation.TargetApi;
 import android.content.Context;
-import android.net.Uri;
 import android.os.Build;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -10,13 +9,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.squareup.picasso.Picasso;
-
 import com.iitbhu.technex18.R;
 import com.iitbhu.technex18.utils.BoldModTextView;
 import com.iitbhu.technex18.utils.ModTextView;
 import com.iitbhu.technex18.utils.RoundedImageView;
+import com.squareup.picasso.Picasso;
 
+/**
+ * Created by Abhinav on 02/01/2018.
+ */
 
 public class TalkAdapter extends RecyclerView.Adapter<TalkAdapter.ViewHolder> {
     private String[] mName, mSubs, mDesc, mImages;

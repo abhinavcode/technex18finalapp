@@ -20,7 +20,7 @@ import com.iitbhu.technex18.database.DbMethods;
 import java.util.ArrayList;
 
 /**
- * Created by root on 18/9/16.
+ * Created by Abhinav on 02/01/2018.
  */
 public class NewsFragment extends Fragment implements DbConstants{
     public NewsFragment() {

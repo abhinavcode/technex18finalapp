@@ -46,6 +46,8 @@ dependencies {
     compile 'com.google.android.gms:play-services-places:10.0.1'
     compile 'com.github.clans:fab:1.6.4'
 
+    compile 'com.daimajia.easing:library:2.0@aar'
+    compile 'com.daimajia.androidanimations:library:2.3@aar'
 }
 
 apply plugin: 'com.google.gms.google-services'

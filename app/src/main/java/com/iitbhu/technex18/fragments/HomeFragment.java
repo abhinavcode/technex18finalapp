@@ -1,5 +1,6 @@
 package com.iitbhu.technex18.fragments;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -33,10 +34,6 @@ import com.daimajia.slider.library.Tricks.ViewPagerEx;
 import com.github.florent37.materialviewpager.MaterialViewPager;
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 import com.iitbhu.technex18.R;
 import com.iitbhu.technex18.activities.CorporateConclave;
 import com.iitbhu.technex18.activities.Exhibitions;
@@ -51,11 +48,14 @@ import com.iitbhu.technex18.database.DbMethods;
 import com.iitbhu.technex18.network.URLs;
 import com.iitbhu.technex18.utils.Constants;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.HashMap;
-import java.util.logging.Handler;
 
 /**
- * Created by root on 18/9/16.
+ * Created by Abhinav on 02/01/2018.
  */
 public class HomeFragment extends Fragment implements BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener, Constants, URLs {
     public HomeFragment() {
@@ -520,6 +520,7 @@ public class HomeFragment extends Fragment implements BaseSliderView.OnSliderCli
         StringRequest strReq = new StringRequest(Request.Method.GET,
                 url, new Response.Listener<String>() {
 
+            @SuppressLint("LongLogTag")
             @Override
             public void onResponse(String response) {
                 Log.d(TAG + " GUEST LECTURES", response.toString());
@@ -925,7 +926,8 @@ public class HomeFragment extends Fragment implements BaseSliderView.OnSliderCli
                             int teamSize;
                             String eventName = currEvent.getString("eventName");
                             int prizeMoney;
-                            String description = currEvent.getString("eventDescription");
+                            String description ="";
+//                                    currEvent.getString("eventDescription");
                             String deadline;
                             try {
                                 eventOrder = Integer.parseInt(currEvent.getString("eventOrder"));

@@ -70,8 +70,8 @@ public class EventDetail extends AppCompatActivity implements NavigationView.OnN
 
         dbMethods = new DbMethods(this);
 
-        Cursor cursor = dbMethods.queryEventOptions(null, COL_EVENTS_OPTIONS_EVENT+" = ?", new String[]{getIntent().getStringExtra("EVENTNAME")}, null, null, COL_EVENTS_OPTIONS_ORDER);
-
+//        Cursor cursor = dbMethods.queryEventOptions(null, COL_EVENTS_OPTIONS_EVENT+" = ?", new String[]{getIntent().getStringExtra("EVENTNAME")}, null, null, COL_EVENTS_OPTIONS_ORDER);
+        Cursor cursor=dbMethods.queryEventOptionsRaw(getIntent().getStringExtra("EVENTNAME"));
         while (cursor.moveToNext()) {
             nameList.add(cursor.getString(cursor.getColumnIndex(COL_EVENTS_OPTIONS_NAME)));
             descList.add(cursor.getString(cursor.getColumnIndex(COL_EVENTS_OPTIONS_DESCRIPTION)));

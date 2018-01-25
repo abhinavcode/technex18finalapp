@@ -24,7 +24,7 @@ import com.iitbhu.technex18.database.DbMethods;
 import java.util.ArrayList;
 
 /**
- * Created by root on 18/9/16.
+ * Created by Abhinav on 02/01/2018.
  */
 public class EventListFragment extends Fragment implements DbConstants {
 
@@ -72,22 +72,25 @@ public class EventListFragment extends Fragment implements DbConstants {
 
         dbMethods = new DbMethods(getActivity());
 
-        String[] parentCategories = {"Robonex", "Ascension", "Extreme Engineering", "Supernova","Modex", "Riqueza", "Byte The Bits", "Creatrix",  "Pahal"};
+        String[] parentCategories = {"Robonex", "Ascension", "Extreme Engineering", "Supernova","Modex", "Riqueza", "Byte The Bits",  "Pahal"};
 
 
 
         int pageNo = getArguments().getInt(ARG_SECTION_NUMBER);
         Log.d("pageNo", pageNo + "");
+        Cursor cursor=dbMethods.queryEventsRaw(parentCategories[pageNo]);
 
-        Cursor cursor = dbMethods.queryEvents(null, COL_EVENTS_PARENT_CATEGORY+" = ?", new String[]{parentCategories[pageNo]+""}, null, null, COL_EVENTS_EVENT_ORDER);
+//        Cursor cursor = dbMethods.queryEvents(null, COL_EVENTS_PARENT_CATEGORY+" = ?", new String[]{parentCategories[pageNo]+""}, null, null, COL_EVENTS_EVENT_ORDER);
 
         ArrayList<String> nameList = new ArrayList<String>();
         ArrayList<String> descList = new ArrayList<String>();
         ArrayList<Integer> memberList = new ArrayList<>();
         ArrayList<Integer> prizeList = new ArrayList<>();
         ArrayList<Integer> IDList = new ArrayList<>();
-
+        int vals=0;
         while (cursor.moveToNext()) {
+            Log.d("events in "+parentCategories[pageNo],vals+"");
+            vals++;
             nameList.add(cursor.getString(cursor.getColumnIndex(COL_EVENTS_NAME)));
             descList.add(cursor.getString(cursor.getColumnIndex(COL_EVENTS_DESCRIPTION)));
             memberList.add(Integer.parseInt(cursor.getString(cursor.getColumnIndex(COL_EVENTS_TEAM_SIZE))));

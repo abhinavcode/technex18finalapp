@@ -19,6 +19,9 @@ import java.util.ArrayList;
 import java.util.Date;
 
 
+/**
+ * Created by Abhinav on 02/01/2018.
+ */
 public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapter.ViewHolder> {
     ArrayList<String> mInitial = new ArrayList<>();
     ArrayList<String> mTitle = new ArrayList<>();
@@ -30,7 +33,7 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
             R.color.md_red_500,             //Ascension
             R.color.md_green_500,             //Extreme
             R.color.md_pink_500,              //Supernova
-            R.color.md_deep_purple_500,               //Modex
+            R.color.md_deep_purple_200,               //Modex
             R.color.md_deep_orange_600,               //Riqueza
             R.color.md_teal_500,             //Byte
             R.color.md_lime_600,                //Creatrix

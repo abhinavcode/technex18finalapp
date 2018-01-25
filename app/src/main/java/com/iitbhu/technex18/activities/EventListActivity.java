@@ -72,7 +72,7 @@ public class EventListActivity extends AppCompatActivity implements NavigationVi
 
             @Override
             public int getCount() {
-                return 9;
+                return 8;
             }
 
 
@@ -94,8 +94,6 @@ public class EventListActivity extends AppCompatActivity implements NavigationVi
                     case 6:
                         return "Byte The Bits";
                     case 7:
-                        return "Creatrix";
-                    case 8:
                         return "Pahal";
                     default:
                         return "Byte The Bits";
@@ -136,26 +134,26 @@ public class EventListActivity extends AppCompatActivity implements NavigationVi
                         return HeaderDesign.fromColorResAndUrl(
                                 R.color.md_green_500,
                                 " ");
-                    case 5:
+                    case 6:
                         return HeaderDesign.fromColorResAndUrl(
                                 R.color.md_yellow_700,
                                 " ");
-                    case 6:
+                    case 7:
                         return HeaderDesign.fromColorResAndUrl(
                                 R.color.md_deep_orange_600,
                                 " ");
-                    case 7:
+                    case 8:
                         return HeaderDesign.fromColorResAndUrl(
                                 R.color.md_red_800,
                                 " ");
-                    case 8:
+                    case 9:
                         return HeaderDesign.fromColorResAndUrl(
                                 R.color.md_pink_700,
                                 " ");
-                    case 9:
-                        return HeaderDesign.fromColorResAndUrl(
-                                R.color.md_deep_purple_400,
-                                " ");
+//                    case 9:
+//                        return HeaderDesign.fromColorResAndUrl(
+//                                R.color.md_deep_purple_400,
+//                                " ");
                 }
 
                 //execute others actions if needed (ex : modify your header logo)

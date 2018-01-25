@@ -27,7 +27,7 @@ import static com.iitbhu.technex18.database.DbConstants.COL_WORKSHOP_IMAGE;
 import static com.iitbhu.technex18.database.DbConstants.COL_WORKSHOP_TITLE;
 
 /**
- * Created by root on 18/9/16.
+ * Created by Abhinav on 02/01/2018.
  */
 public class WorkshopListFragment extends Fragment {
     public WorkshopListFragment() {

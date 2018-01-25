@@ -3,6 +3,7 @@ package com.iitbhu.technex18.activities;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.design.widget.CoordinatorLayout;
@@ -18,6 +19,8 @@ import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 import com.iitbhu.technex18.R;
 import com.iitbhu.technex18.database.DbMethods;
 import com.iitbhu.technex18.network.URLs;
@@ -40,7 +43,7 @@ public class Splash extends AppCompatActivity implements Constants, URLs {
     private RequestQueue queue;
 
     DbMethods dbMethods;
-
+    AnimationDrawable animationDrawable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,55 +54,60 @@ public class Splash extends AppCompatActivity implements Constants, URLs {
         myprefs= PreferenceManager.getDefaultSharedPreferences(this);
 
         dbMethods = new DbMethods(this);
-
+//        ImageView rocketImage = (ImageView) findViewById(R.id.splash);
+//        rocketImage.setImageDrawable(R.drawable.splash);
+//        animationDrawable = (AnimationDrawable) rocketImage.getBackground();
+//        animationDrawable.start();
+        YoYo.with(Techniques.Landing).duration(1000).playOn(findViewById(R.id.splash));
+//        animationDrawable.
         Thread timer = new Thread() {
             public void run() {
                 try {
-                    sleep(200);
-                    runOnUiThread(new Runnable() {
-                        public void run() {
-                            layout.setBackgroundResource(R.drawable.splash7);
-                        }
-                    });
-
-                    sleep(200);
-                    runOnUiThread(new Runnable() {
-                        public void run() {
-                            layout.setBackgroundResource(R.drawable.splash6);
-                        }
-                    });
-                    sleep(200);
-                    runOnUiThread(new Runnable() {
-                        public void run() {
-                            layout.setBackgroundResource(R.drawable.splash5);
-                        }
-                    });
-                    sleep(200);
-                    runOnUiThread(new Runnable() {
-                        public void run() {
-                            layout.setBackgroundResource(R.drawable.splash4);
-                        }
-                    });
-                    sleep(200);
-                    runOnUiThread(new Runnable() {
-                        public void run() {
-                            layout.setBackgroundResource(R.drawable.splash3);
-                        }
-                    });
-                    sleep(200);
-                    runOnUiThread(new Runnable() {
-                        public void run() {
-                            layout.setBackgroundResource(R.drawable.splash2);
-                        }
-                    });
-                    sleep(200);
-                    runOnUiThread(new Runnable() {
-                        public void run() {
-                            layout.setBackgroundResource(R.drawable.splash1);
-                        }
-                    });
-
-                    sleep(400);
+                    sleep(1000);
+//                    runOnUiThread(new Runnable() {
+//                        public void run() {
+//                            layout.setBackgroundResource(R.drawable.splash7);
+//                        }
+//                    });
+////
+//                    sleep(200);
+//                    runOnUiThread(new Runnable() {
+//                        public void run() {
+//                            layout.setBackgroundResource(R.drawable.splash6);
+//                        }
+//                    });
+//                    sleep(200);
+//                    runOnUiThread(new Runnable() {
+//                        public void run() {
+//                            layout.setBackgroundResource(R.drawable.splash5);
+//                        }
+//                    });
+//                    sleep(200);
+//                    runOnUiThread(new Runnable() {
+//                        public void run() {
+//                            layout.setBackgroundResource(R.drawable.splash4);
+//                        }
+//                    });
+//                    sleep(200);
+//                    runOnUiThread(new Runnable() {
+//                        public void run() {
+//                            layout.setBackgroundResource(R.drawable.splash3);
+//                        }
+//                    });
+//                    sleep(200);
+//                    runOnUiThread(new Runnable() {
+//                        public void run() {
+//                            layout.setBackgroundResource(R.drawable.splash2);
+//                        }
+//                    });
+//                    sleep(200);
+//                    runOnUiThread(new Runnable() {
+//                        public void run() {
+//                            layout.setBackgroundResource(R.drawable.splash1);
+//                        }
+//                    });
+//
+//                    sleep(400);
 
 
 
@@ -107,7 +115,7 @@ public class Splash extends AppCompatActivity implements Constants, URLs {
                     e.printStackTrace();
                 } finally {
 
-
+//
 //                    readFromFile(getApplicationContext(), "event_data.txt");
 //                    if (myprefs.getLong(LAST_UPDATE_TIME, 0) == 0) {
 
@@ -141,7 +149,7 @@ public class Splash extends AppCompatActivity implements Constants, URLs {
 
     public void checkAndStoreToken() {
         String token1 = myprefs.getString(FCM_TOKEN, null);
-        Log.d("token",token1);
+//        Log.d("token",token1);
         final String TAG = "SPLASH TOKEN";
         if ( ! (myprefs.getBoolean(IS_FCM_TOKEN_SENT_WITH_ID, false)) && (myprefs.getBoolean(REGISTERED, false)) ) {
 
@@ -307,7 +315,8 @@ public class Splash extends AppCompatActivity implements Constants, URLs {
                         int teamSize;
                         String eventName = currEvent.getString("eventName");
                         int prizeMoney;
-                        String description = currEvent.getString("eventDescription");
+                        String description = "";
+//                        currEvent.getString("eventDescription");
                         String deadline;
                         try {
                             eventOrder = Integer.parseInt(currEvent.getString("eventOrder"));

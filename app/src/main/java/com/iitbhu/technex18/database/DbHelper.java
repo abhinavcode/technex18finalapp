@@ -2,22 +2,15 @@ package com.iitbhu.technex18.database;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.content.res.AssetManager;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 import com.iitbhu.technex18.utils.Constants;
 
-import java.io.IOException;
-import java.io.InputStream;
-
 /**
- * Created by shriyansh on 18/12/15.
+ * Created by Abhinav on 02/01/2018.
  */
 public class DbHelper extends SQLiteOpenHelper implements DbConstants, Constants{
 

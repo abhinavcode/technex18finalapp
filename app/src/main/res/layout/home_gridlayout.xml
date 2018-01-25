@@ -2,8 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.iitbhu.technex18.activities.LoginActivity$PlaceholderFragment">
+    android:orientation="vertical">
 
     <!--
     LIST OF CARDS (CV WISE)
@@ -79,9 +78,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom|end"
-                        android:textSize="16dp"
                         android:textColor="@color/white"
-                        android:text="Events"/>
+                        android:text="Events"
+                        android:textSize="20dp"
+                        android:textAllCaps="true"/>
 
                     <com.iitbhu.technex18.utils.ModTextView
                         android:layout_width="match_parent"
@@ -141,8 +141,9 @@
                     <com.iitbhu.technex18.utils.BoldModTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="bottom|end"
-                        android:textSize="16dp"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:textSize="20dp"
+                        android:textAllCaps="true"
                         android:textColor="@color/white"
                         android:text="Think Talks"/>
 
@@ -212,7 +213,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom|end"
-                        android:textSize="16dp"
+                        android:textSize="20dp"
+                        android:textAllCaps="true"
                         android:textColor="@color/white"
                         android:text="Workshops"/>
 
@@ -275,7 +277,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom|end"
-                        android:textSize="16dp"
+                        android:textSize="20dp"
+                        android:textAllCaps="true"
                         android:textColor="@color/white"
                         android:text="Startup Fair"/>
 
@@ -345,9 +348,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom|end"
-                        android:textSize="16dp"
+                        android:textSize="20dp"
+                        android:textAllCaps="true"
                         android:textColor="@color/white"
-                        android:text="Kaleidoscope"/>
+                        android:text="Pronites"/>
 
                     <com.iitbhu.technex18.utils.ModTextView
                         android:layout_width="match_parent"
@@ -409,7 +413,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom|end"
-                        android:textSize="16dp"
+                        android:textSize="20dp"
+                        android:textAllCaps="true"
                         android:textColor="@color/white"
                         android:text="Institute Day"/>
 
@@ -479,7 +484,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom|end"
-                        android:textSize="16dp"
+                        android:textSize="20dp"
+                        android:textAllCaps="true"
                         android:textColor="@color/white"
                         android:text="Corporate Conclave"/>
 
@@ -542,7 +548,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom|end"
-                        android:textSize="16dp"
+                        android:textSize="20dp"
+                        android:textAllCaps="true"
                         android:textColor="@color/white"
                         android:text="Exhibitions"/>
 
@@ -614,7 +621,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom|end"
-                        android:textSize="16dp"
+                        android:textSize="20dp"
+                        android:textAllCaps="true"
                         android:textColor="@color/white"
                         android:text="Hospitality"/>
 
@@ -677,7 +685,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom|end"
-                        android:textSize="16dp"
+                        android:textSize="20dp"
+                        android:textAllCaps="true"
                         android:textColor="@color/white"
                         android:text="Gallery"/>
 

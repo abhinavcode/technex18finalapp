@@ -1,8 +1,6 @@
 package com.iitbhu.technex18.fragments;
 
 import android.database.Cursor;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -15,23 +13,17 @@ import android.view.ViewGroup;
 import com.github.florent37.materialviewpager.MaterialViewPager;
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
-
 import com.iitbhu.technex18.R;
 import com.iitbhu.technex18.database.DbMethods;
 import com.iitbhu.technex18.utils.ModTextView;
 
 import java.util.ArrayList;
 
-import static com.iitbhu.technex18.database.DbConstants.COL_GUEST_LECTURE_DESIGNATION;
-import static com.iitbhu.technex18.database.DbConstants.COL_GUEST_LECTURE_IMAGE;
-import static com.iitbhu.technex18.database.DbConstants.COL_GUEST_LECTURE_LECTURER_BIO;
-import static com.iitbhu.technex18.database.DbConstants.COL_GUEST_LECTURE_LECTURER_TYPE;
-import static com.iitbhu.technex18.database.DbConstants.COL_GUEST_LECTURE_NAME;
 import static com.iitbhu.technex18.database.DbConstants.COL_WORKSHOP_DESCRIPTION;
 import static com.iitbhu.technex18.database.DbConstants.COL_WORKSHOP_FEES;
 
 /**
- * Created by florentchampigny on 24/04/15.
+ * Created by Abhinav on 02/01/2018.
  */
 public class WorkshopDetailFragment extends Fragment {
 
